@@ -1,0 +1,118 @@
+/* Invoices Page */
+.invoices-table {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.invoices-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.invoices-table thead {
+  background-color: #f8f9fa;
+}
+
+.invoices-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #e1e8ed;
+}
+
+.invoices-table td {
+  padding: 16px;
+  border-bottom: 1px solid #e1e8ed;
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+.invoices-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.invoice-number {
+  font-weight: 600;
+  color: #1e3a5f;
+}
+
+.status-select {
+  padding: 8px 12px;
+  border: 1px solid #e1e8ed;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.status-draft {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+.status-sent {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.status-paid {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-cancelled {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 10px 16px;
+  border: 2px solid #e1e8ed;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  border-color: #1e3a5f;
+  color: #1e3a5f;
+}
+
+.filter-btn.active {
+  background-color: #1e3a5f;
+  color: white;
+  border-color: #1e3a5f;
+}
+
+@media (max-width: 768px) {
+  .invoices-table {
+    overflow-x: auto;
+  }
+
+  .action-buttons {
+    min-width: 150px;
+  }
+}
